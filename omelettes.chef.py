@@ -1,14 +1,14 @@
-from kitchen.utensils.Utensil import Bowl
 from kitchen.Rosemary import Rosemary
-from kitchen.utensils import Pan, Plate
+from kitchen.utensils import Pan, Plate, Bowl
 from kitchen.ingredients import Butter, Egg, Salt
-
+#putting 3 eggs in a bowl to mix
 bowl=Bowl.use(name='egg mixture')
 for i in range(3):
     egg = Egg.take()
     egg.crack()
     bowl.add(egg)
 bowl.mix()
+#using a pan to make 3 omelettes and serve on 1 plate
 pan = Pan.use(name='omelette')
 plate = Plate.use()
 for i in range(3):
