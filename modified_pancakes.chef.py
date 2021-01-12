@@ -17,7 +17,7 @@ for i in range(5):
     batter._add(item=flour)
     batter._mix()
 for i in range(2):
-    milk=Milk.take(ml=500)
+    milk=Milk.take(ml=250)
     batter._add(item=milk)
     batter._mix()
 #making a specific measurement of ingredients to scoop for a single pancake
